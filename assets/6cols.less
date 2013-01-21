@@ -1,0 +1,29 @@
+/*
+	Wide mobile layout 
+	480-767 px
+	Zoomed in above 480 px
+  6cols
+  408px
+*/
+
+@media screen and (min-width: 30em) {
+.wrapper {
+  .row(12);
+}
+
+	#masthead, #introduction, article, article section, #colophon {
+		width: @6cols;
+	}
+	
+	#masthead h1, #masthead p, #introduction span, #follow span {
+		display: block;
+	}
+	
+	#nav {
+	}
+#otc img {
+  width: @6cols;
+}
+
+	
+}

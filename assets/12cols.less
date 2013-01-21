@@ -1,0 +1,102 @@
+/*
+	Widescreen layout 
+	912-1887 px
+	Zoomed in above 912 px
+  12cols 
+  840px 
+*/
+
+@media screen and (min-width: 57em) {
+  #test1 {
+    .column(4); 
+    .gutter-right(); 
+    background-color: black; 
+    height: 50px; 
+  }
+  #test {
+    .column(6); 
+    .push(2); 
+    background-color: black; 
+    height: 50px; 
+  }
+
+  .wrapper {
+    .row(12); 
+  }
+	
+	#masthead, #introduction, article, article section, #colophon {
+		width: @12cols;
+	}
+
+
+#about, #pitch {
+ .column(6)  
+}
+#pitch {
+  .gutter-right(); 
+}
+
+	#masthead {
+		padding-top: 48/@em;
+	}
+	
+		#masthead h1 {
+			.huge();
+			width: auto;
+			letter-spacing: 2/44*1em;
+		}
+		
+		#masthead p {
+			position: absolute;
+			left: (24/@em)+@4cols; top: 48/@em;
+			width: @3cols;
+		}
+	
+		#nav {
+			top: 24/@em;
+		}
+			
+
+	#colophon {
+		margin-top: 72/@em;
+		border-top: 2/@em solid @emphasis;
+		padding-top: 22/@em;
+	}
+		
+		#follow {
+			float: left;
+			width: @4cols;
+			padding: 36/@em 24/@em 0 0;
+			border: 0;
+		}
+	
+			#follow h1 {
+				.normal();
+				text-align: left;
+			}
+			
+			#follow span {display: inline;}
+			
+		#copyright {
+			padding-left: @gutter/@em + @4cols;
+		}
+	
+}
+
+@media screen and (min-width: 57em) and (max-width: 117.9375em) {
+	
+	#downloads h3, #faq h3 {
+		float: left;
+		clear: left;
+		width: @4cols;
+		padding-top: 23/@em;
+	}
+	
+		#downloads p, #faq p {
+			padding-left: (24/@em)+@4cols;
+			margin-top: 24/@em;
+			border-top: 1.1/@em solid @highlight;
+			padding-top: 23/@em;
+		}
+	
+}

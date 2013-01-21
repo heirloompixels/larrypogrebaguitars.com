@@ -1,0 +1,78 @@
+/*
+	Tablet layout 
+	600-911 px
+	Zoomed in above 600 px
+  8cols
+  552px
+*/
+
+@media screen and (min-width: 37.5em) {
+.wrapper {
+  .row(8); 
+}
+	
+	
+	#masthead, #introduction, article, article section, #colophon {
+		width: @8cols;
+	}
+	
+	#masthead {
+		text-align: left;
+		position: relative;
+		padding-top: 36/@em;
+	}	
+	
+		#masthead h1 {
+			float: left;
+			margin-right: 4/@em;
+		}
+	
+		#masthead p {
+			width: @4cols;
+		}
+		
+		#nav {
+		}
+  #otc section {
+    .clearfix();
+    padding: 24/@em 0; 
+  }
+  #otc img#boxWrenchRollClosed, #otc img#boxWrenchRollOpen, 
+  #otc img#boxEndTops, #otc img#boxEndBottoms {
+    float: left; 
+    width: @4cols;
+    display: block;
+  }
+  img#boxEndTops, img#boxWrenchRollClosed {
+    margin-right: 24/@em; 
+  }
+  #otc img#pliers {
+    width: @8cols; 
+  }
+  img#needleNose, img#spanners, img#socketPile {
+    width: @4cols; 
+    margin: 0 (@2cols+24/@em); 
+  }
+
+	
+	article h2 {
+		.large();
+		letter-spacing: 1.1/27*1em;
+		padding-top: 72/27*1em;
+	}
+	
+	
+	#author, #promo {
+		width: @4cols;
+		float: left;
+	}
+	
+		#author {
+			padding: 0 24/@em 0 0;
+		}
+	
+	#copyright {
+		clear: both;
+	}
+	
+}

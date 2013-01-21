@@ -1,0 +1,33 @@
+/*
+	Mobile layout 
+	240–479 px
+	Zoomed out below 320 px
+  4cols
+  264px
+*/
+
+@media screen and (min-width: 15em) {
+
+.wrapper {
+  .row(4);
+}
+
+	#masthead, #introduction, article,  article section, #colophon {
+		width: @4cols;
+		max-width: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+#otc img {
+  width: @4cols; 
+}
+
+	
+#masthead {
+		border-bottom: 1px solid #ccc; 
+}
+#nav li {
+}
+	
+}
